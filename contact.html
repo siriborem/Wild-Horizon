@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Horizon</title>
+  <link rel="icon" href="Images/mountain.png" type="image/png">
+  <link rel="icon" type="image/x-icon" href="/Images/mountain.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-zR2Th8GQP4Rgw/j+1yYikwWqO5J6cYE/D15yoZCqZ6n/h7p/8s+yM2+Hj+n/47a7d0+v+I5fe4feETH4R9WQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/contact.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+
+<body>
+  <header class="header">
+    <!-- Banner -->
+    <div class="banner">
+      <p>Winter Collection 2024: Order everything for 20% Off</p>
+    </div>
+
+    <!-- Logo and Title -->
+    <div class="logo">
+      <img src="Images/mountain.png" alt="Wild Horizon Logo">
+      <h1 class="title">Wild Horizon</h1>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-bar">
+      <input type="text" placeholder="I'm looking for">
+      <span class="material-icons search-icon" id="search_icon">search</span>
+      <span class="store"><a href="#">Set my store</a></span>
+    </div>
+
+    <div class="header-links">
+      <a href="#"><span class="material-icons">help_outline</span> Help</a>
+      <a href="login.html" id="auth-button"><span class="material-icons">person_outline</span> Login</a>
+      <a href="#" id="cart-link">
+        <span class="material-icons">shopping_cart</span>
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gearcategory.html">Gear Category</a></li>
+        <li><a href="Geardetails.html">Explore Gears</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Contact body page -->
+  <main>
+    <div class="contact-section">
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Please fill out the form below to get in touch.</p>
+      </div>
+
+      <!-- contact form -->
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <span class="error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" name="department">
+              <option value="">Select a Department</option>
+              <option value="sales">Sales</option>
+              <option value="support">Support</option>
+              <option value="general">General Inquiry</option>
+            </select>
+            <span class="error" id="departmentError"></span>
+          </div>
+          <div class="form-group">
+            <label for="preferred-contact">Preferred Contact Method</label>
+            <select id="preferred-contact" name="preferred-contact">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+            </select>
+            <span class="error" id="preferredContactError"></span>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Your Country">
+            <span class="error" id="countryError"></span>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Your City">
+            <span class="error" id="cityError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>About WH</h4>
+        <ul>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Price matching and protection</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">My Rewards</a></li>
+          <li><a href="#">Change address</a></li>
+          <li><a href="#">Order history</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Member Rewards</h4>
+        <ul>
+          <li><a href="#">Outdoor impact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#"><img src="Images/facebook.png" alt=""></a>
+          <a href="#"><img src="Images/twitter.png" alt=""></a>
+          <a href="#"><img src="Images/instagram.png" alt=""></a>
+          <a href="#"><img src="Images/youtube.png" alt=""></a>
+        </div>
+      </div>
+      <p class="footer-copy"> &copy; 2024. All rights reserved. Wild Horizon Limited.</p>
+    </div>
+  </footer>
+  <!-- Link to external JavaScript file -->
+  <script src="js/login.js"></script>
+  <script src="js/contact-validation.js"></script>
+  <script src="js/details.js"></script>
+</body>
+
+</html>

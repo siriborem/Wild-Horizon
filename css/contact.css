@@ -1,0 +1,337 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+  }
+  
+  /* Header Styling */
+  .header {
+    display: grid;
+    grid-template-columns: 15% 55% 30%; /* 3 Columns */
+    grid-template-rows: auto auto auto; /* 3 Rows */
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  
+  .banner {
+    display: grid;
+    grid-column: 1 / span 3;
+    width: 100%; /* Full width */
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  
+  /* Logo and Title */
+  .logo {
+    grid-column: 1;
+    grid-row: 2 / span 2; /* Spans the last two rows */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 80px;
+    width: 60px;
+  }
+  
+  .title {
+    font-family: sans-serif, 'Times New Roman', Times;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #333;
+  }
+  
+  /* Search Section */
+  .search-bar {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    gap: 10px; /* Add space between input and store link */
+  }
+  
+  .search-bar .material-icons.search-icon {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    pointer-events: none; /* Prevent the icon from blocking input */
+  }
+  
+  .search-bar input {
+    width: 60%;
+    padding: 10px 15px;
+    padding-left: 35px; /* Add space for the icon */
+    border: 2px solid #e0e0e0;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007aa0;
+    box-shadow: 0 0 5px rgba(0, 122, 160, 0.5);
+  }
+  
+  .search-bar .store a {
+    color: #007aa0;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-bar .store a:hover {
+    color: #005f80;
+    transform: scale(1.1);
+  }
+  
+  /* Header Links */
+  .header-links {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .cart-count {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-left: 5px;
+    vertical-align: top;
+  }
+    
+  .header-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .header-links .material-icons {
+    margin-right: 5px; /* Spacing between icon and text */
+    font-size: 18px; /* Icon size */
+    color: inherit; /* Use the same color as the text */
+  }
+  
+  .header-links a:hover {
+    color: #005f80; /* Change text and icon color on hover */
+    transform: scale(1.1); /* Add a zoom effect */
+  }
+  
+  /* Menu */
+  .menu {
+    grid-column: 2 / span 2; /* Spans columns 2 and 3 */
+    grid-row: 3;
+    background-color: #005f80;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    width: 95%;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 0 20px;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #ffcc00;
+    color: #005f80;
+    transform: scale(1.1);
+  }
+  
+/* Contact Page Styling */
+.contact-section {
+    text-align: center;
+    color: white;
+}
+
+.contact-header {
+    background-image: url('Images/contactimg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(10, 10, 10);
+    padding: 5px 0;
+    height: 450px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    margin-top: 90px;
+}
+
+.contact-header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Container for the form */
+.contact-form-container {
+    display: flex;
+    justify-content:center;
+    align-items:centre;
+    padding: 10px 90px;
+    margin-top: 10px; /* Adjust to ensure form is in the right position */
+}
+
+/* Styling the form box */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%; /* Adjust width to fit the design */
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0a0202;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Error message styling */
+.error {
+    color: red;
+    font-size: 0.875rem;
+}
+
+  
+  /* Footer */
+  footer {
+    background-color: #f0f0f0;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-column {
+    text-align: center;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-social{
+    margin-left: 40%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    margin-right: 45px;
+    color: #333;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-copy {
+    background-color:#005f80 ;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .footer-social i {
+      font-size: 20px;
+  }
+  
+  .footer-links a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 10px;
+  }
+  
+  .footer-copyright {
+      font-size: 12px;
+      text-align: center;
+  }
+
+  

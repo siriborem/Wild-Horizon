@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Horizon</title>
+  <link rel="icon" href="Images/mountain.png" type="image/png" />
+  <link rel="icon" type="image/x-icon" href="/Images/mountain.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/Geardetails.css" />
+</head>
+
+<body>
+  <header class="header">
+    <!-- Banner -->
+    <div class="banner">
+      <p>Winter Collection 2024: Order everything for 20% Off</p>
+    </div>
+
+    <!-- Logo and Title -->
+    <div class="logo">
+      <img src="Images/mountain.png" alt="Wild Horizon Logo" />
+      <h1 class="title">Wild Horizon</h1>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-bar">
+      <input type="text" placeholder="I'm looking for" />
+      <span class="material-icons search-icon" id="search_icon">search</span>
+      <span class="store"><a href="#">Set my store</a></span>
+    </div>
+    <div class="header-links">
+      <a href="#"><span class="material-icons">help_outline</span> Help</a>
+      <a href="login.html" id="auth-button"><span class="material-icons">person_outline</span> Login</a>
+      <button id="remove-from-cart" class="remove-button">Remove</button>
+      <a href="#" id="cart-link">
+        <span class="material-icons">shopping_cart</span>
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gearcategory.html">Gear Category</a></li>
+        <li><a href="Geardetails.html">Explore Gears</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Explore the Best Camping Tents</h1>
+      <h2>Your Adventure Starts Here</h2>
+      <p>
+        Find the perfect tent to make your outdoor adventure unforgettable.
+        Lightweight, durable, and built for the wild.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="Images/tent.webp" alt="Camping Tent" />
+    </div>
+  </section>
+  <!-- Product Name and Description -->
+  <div class="product-details">
+    <div class="price">$149.99</div>
+    <button class="add-to-cart-button" id="add-to-cart">Add to Cart</button>
+  </div>
+  <div class="quantity-controls">
+    <button class="quantity-button" id="decrease-quantity">-</button>
+    <span id="product-quantity">1</span>
+    <button class="quantity-button" id="increase-quantity">+</button>
+  </div>
+
+  <!-- Product Specifications -->
+  <section class="spec-section">
+    <h2>Product Specifications</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Material</td>
+          <td>Polyester</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>2.5kg</td>
+        </tr>
+        <tr>
+          <td>Dimensions</td>
+          <td>200cm x 150cm x 120cm</td>
+        </tr>
+        <tr>
+          <td>Price</td>
+          <td>$120</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="product-info">
+    <h2>Explorer Tent 3.0</h2>
+    <p>
+      The Explorer Tent 3.0 is designed for those who love the great outdoors.
+      It provides maximum comfort, durability, and protection in the wild.
+      Whether you're trekking through the mountains or camping by the lake,
+      this tent ensures you'll stay dry, comfortable, and safe.
+    </p>
+  </section>
+
+  <!-- Related Products and Reviews -->
+  <section class="related-review-section">
+    <div class="related-products">
+      <h2>Other Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="Images/backpack.webp" alt="Hiking Backpack" />
+          <p>Hiking Backpack</p>
+        </div>
+        <div class="product-card">
+          <img src="Images/shoes.jpg" alt="Waterproof Boots" />
+          <p>Waterproof Boots</p>
+        </div>
+      </div>
+    </div>
+    <div class="customer-reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p>"This tent is amazing! Lightweight and super easy to set up."</p>
+        <p>- John Doe</p>
+      </div>
+      <div class="review">
+        <p>"Perfect for a weekend camping trip. Highly recommend!"</p>
+        <p>- Jane Smith</p>
+      </div>
+      <div class="review">
+        <p>
+          "I love how durable this tent is. It's perfect for all seasons!"
+        </p>
+        <p>- Michael Johnson</p>
+      </div>
+      <div class="review">
+        <p>
+          "Had an incredible experience with this tent. Spacious and very
+          reliable!"
+        </p>
+        <p>- David Brown</p>
+      </div>
+      <div class="review">
+        <p>"Exceeded my expectations! Very comfortable for longer trips."</p>
+        <p>- Sarah Lee</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>About WH</h4>
+        <ul>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Price matching and protection</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">My Rewards</a></li>
+          <li><a href="#">Change address</a></li>
+          <li><a href="#">Order history</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Member Rewards</h4>
+        <ul>
+          <li><a href="#">Outdoor impact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#"><img src="Images/facebook.png" alt="" /></a>
+          <a href="#"><img src="Images/twitter.png" alt="" /></a>
+          <a href="#"><img src="Images/instagram.png" alt="" /></a>
+          <a href="#"><img src="Images/youtube.png" alt="" /></a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; 2024. All rights reserved. Wild Horizon Limited.
+      </p>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+  <script src="js/details.js"></script>
+</body>
+
+</html>

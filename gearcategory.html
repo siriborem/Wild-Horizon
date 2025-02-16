@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Horizon</title>
+  <link rel="icon" type="image/x-icon" href="/Images/mountain.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/gearcategory.css">
+</head>
+<body>
+  <header class="header">
+    <!-- Banner -->
+    <div class="banner">
+        <p>Winter Collection 2024: Order everything for 20% Off</p>
+    </div>
+
+    <!-- Logo and Title -->
+    <div class="logo">
+        <img src="Images/mountain.png" alt="Wild Horizon Logo">
+        <h1 class="title">Wild Horizon</h1>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-bar">
+        <span class="material-icons search-icon">search</span>
+        <input type="text" placeholder="I'm looking for">
+        <span class="store"><a href="#">Set my store</a></span>
+    </div>
+    <div class="header-links">
+      <a href="#"><span class="material-icons">help_outline</span> Help</a>
+      <a href="login.html" id="auth-button"><span class="material-icons">person_outline</span> Login</a>
+      <a href="#" id="cart-link">
+        <span class="material-icons">shopping_cart</span>
+                  Cart <span id="cart-count" class="cart-count">0</span>
+        </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gearcategory.html">Gear Category</a></li>
+            <li><a href="Geardetails.html">Explore Gears</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Slideshow -->
+  <section class="hero-section">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="Images/1.jpg" alt="Explore the Wild">
+      </div>
+      <div class="slide fade">
+        <img src="Images/2.jpg" alt="Adventure Awaits">
+      </div>
+      <div class="slide fade">
+        <img src="Images/3.jpg" alt="Gear Up Now"> 
+      </div>
+    </div>
+  </section>
+
+  <div class="shop-by-category">
+    <!-- Side Navigation Bar -->
+    <div class="filters">
+      <h3>Brand</h3>
+      <input type="text" placeholder="Search brands">
+      <label><input type="checkbox" checked> MEC</label>
+      <hr>
+      <h3>Gender</h3>
+      <label><input type="checkbox"> Womens</label>
+      <label><input type="checkbox"> Mens</label>
+      <label><input type="checkbox"> Kids</label>
+      <a href="#">More</a>
+      <hr>
+      <h3>Current Offers</h3>
+      <label><input type="checkbox"> Clearance</label>
+      <label><input type="checkbox"> Sale</label>
+      <label><input type="checkbox"> New Arrivals</label>
+    </div>
+  
+    <!-- Category Grid -->
+    <div class="category-grid">
+      <div class="category-header">
+        <h2>Shop by category</h2>
+        <a href="#">View all →</a>
+      </div>
+      <div class="category-items">
+        <div class="category-item">
+          <img src="Images/fabio-comparelli-uq2E2V4LhCY-unsplash.jpg" alt="Packs and Bags">
+          <p>Packs and Bags</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/chandler-media-TX26xYYm00g-unsplash.jpg" alt="Clothing">
+          <p>Clothing</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/StockCake-Children Playing Snow_1733950698.jpg" alt="Kids and Babies">
+          <p>Kids and Babies</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/greg-rosenke-UkIinksPvT0-unsplash.jpg" alt="Camp and Hike">
+          <p>Camp and Hike</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/paul-green-gOHfFgwyDNM-unsplash.jpg" alt="Cycling">
+          <p>Cycling</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/pexels-lureofadventure-10771804.jpg" alt="Travel Gear">
+          <p>Travel Gear</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/pexels-jack-redgate-333633-2929284.jpg" alt="Footwear">
+          <p>Footwear</p>
+        </div>
+        <div class="category-item">
+          <img src="Images/jack-finnigan-yQWAzepQZlY-unsplash.jpg" alt="Equipment">
+          <p>Equipment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="new-layout">
+    <div class="layout-container">
+      <div class="layout-image">
+        <img src="Images/pexels-yankrukov-6618008.jpg" alt="Keeping You Outdoors">
+      </div>
+      <div class="layout-text">
+        <h2>Stay in the Know</h2>
+        <p>Learn about new gear, sales, and more.</p>
+        <a href="#" class="cta-button" id="signUpButton">Sign Up for Email</a>
+        <!-- Modal for Email Subscription -->
+        <div id="emailModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2); z-index: 1000; border-radius: 8px;">
+          <h3>Subscribe to our newsletter</h3>
+          <input type="email" id="emailInput" placeholder="Enter your email" style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          <button id="submitEmail" style="margin-top: 10px; padding: 10px 20px; background-color: #005f80; color: white; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
+          <button id="closeModal" style="margin-top: 10px; margin-left: 10px; padding: 10px 20px; background-color: #ccc; color: black; border: none; border-radius: 4px; cursor: pointer;">Close</button>
+          <p id="feedbackMessage" style="margin-top: 10px; color: green;"></p>
+        </div>
+        <!-- Overlay to dim background -->
+        <div id="modalOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 999;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="#"><img src="Images/facebook.png" alt=""></a>
+            <a href="#"><img src="Images/twitter.png" alt=""></a>
+            <a href="#"><img src="Images/instagram.png" alt=""></a>
+            <a href="#"><img src="Images/youtube.png" alt=""></a>
+          </div>
+        </div>
+        <p class="footer-copy"> &copy; 2024. All rights reserved. Wild Horizon Limited.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/slideshow.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Wild Horizon</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login-page">
+  <header>
+    <h1>Login to Wild Horizon</h1>
+  </header>
+  <main>
+    <section class="login-section">
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        
+        <button type="submit">Login</button>
+      </form>
+      <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
+    </section>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

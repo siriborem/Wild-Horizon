@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Horizon</title>
+  <link rel="icon" type="image/x-icon" href="/Images/mountain.png" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body>
+  <header class="header">
+    <!-- Banner -->
+    <div class="banner">
+      <p>Winter Collection 2024: Order everything for 20% Off</p>
+    </div>
+
+    <!-- Logo and Title -->
+    <div class="logo">
+      <img src="Images/mountain.png" alt="Wild Horizon Logo" />
+      <h1 class="title">Wild Horizon</h1>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-bar">
+      <input type="text" placeholder="I'm looking for" />
+      <span class="material-icons search-icon" id="search_icon">search</span>
+      <span class="store"><a href="#">Set my store</a></span>
+    </div>
+
+    <div class="header-links">
+      <a href="#"><span class="material-icons">help_outline</span> Help</a>
+      <a href="login.html" id="auth-button"><span class="material-icons">person_outline</span> Login</a>
+      <a href="#" id="cart-link">
+        <span class="material-icons">shopping_cart</span>
+        Cart <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gearcategory.html">Gear Category</a></li>
+        <li><a href="Geardetails.html">Explore Gears</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section">
+      <div class="about-container">
+        <!-- image 1 -->
+        <div class="about-img-container" id="about-img-1">
+          <img src="Images/about1.jpg" class="hero-img" />
+          <div class="mainsection-content">
+            <h1>Wild Horizon</h1>
+            <p><b>Passionate about fueling your adventures with the best quality gear and equipment.</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- image 2 -->
+        <div class="about-img-container" id="about-img-2">
+          <img src="Images/ani1.jpg" class="hero-img" />
+          <div class="mainsection-content">
+            <h1>Wild Horizon</h1>
+            <p><b>With a passion for exploration, discover the world’s most breathtaking landscapes and hidden gems</b>
+            </p>
+          </div>
+        </div>
+
+        <!-- image 3 -->
+        <div class="about-img-container" id="about-img-3">
+          <img src="Images/ani2.jpg" class="hero-img" />
+          <div class="mainsection-content">
+            <h1>Wild Horizon</h1>
+            <p><b>Unforgettable experiences that connect you with the raw beauty of nature, offering adventures that
+                inspire and transform</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="para-section">
+      <p>
+        <i><b>"We’ve started as a small store with a passion for exploration
+            has grown into a trusted name in the adventure gear industry. Over
+            the years, we’ve dedicated ourselves to providing products that
+            combine durability, innovation, and comfort, ensuring that every
+            explorer is equipped for their journey."</b>
+        </i>
+      </p>
+    </section>
+
+    <section class="grid-container">
+      <div class="image-left">
+        <img src="Images/grid1.jpg" alt="Backpack" />
+      </div>
+      <div class="text-right">
+        <h4>Experience the Pinnacle of Mountain Hiking Adventures</h4>
+        <p>
+          Discover gear designed to elevate your mountain hiking experience,
+          crafted with precision and expertise. Our cutting-edge Mountain and
+          Cycling Design Centers and R&D Labs in Europe are where innovation
+          meets adventure. Each item undergoes rigorous testing in diverse
+          terrains, from rugged mountain paths to unpredictable weather,
+          ensuring its reliability when you need it most.
+        </p>
+      </div>
+
+      <div class="text-left">
+        <h4>Unmatched Quality, Unbeatable Value</h4>
+        <p>
+          We believe in making top-tier outdoor adventure gear accessible to
+          everyone. As a global leader in innovation and performance, our
+          vertically integrated business model—spanning research and
+          development, manufacturing, and supply chain—allows us to deliver
+          high-quality products at an affordable price.
+        </p>
+      </div>
+      <div class="image-right">
+        <img src="Images/grid2.jpg" alt="Man adventure image with equipment" />
+      </div>
+    </section>
+
+    <section class="product">
+      <h1>Our Iconic products</h1>
+      <div class="product1">
+        <div class="bag">
+          <img src="Images/bag.jpg" alt="A backpack" />
+          <h4>MRW Bag</h4>
+          <p>
+            Durable and lightweight, designed for comfort with adjustable
+            straps, ventilation, and multiple compartments. Perfect for day
+            hikes or multi-day adventures.
+          </p>
+        </div>
+        <div class="product2">
+          <img src="Images/tent.jpg" alt="Camp tent" />
+          <h4>2 storey Tent</h4>
+          <p>
+            Compact, weather-resistant, and easy to set up, with options for
+            ultralight or four-season use to suit any terrain or climate.
+          </p>
+        </div>
+        <div class="product3">
+          <img src="Images/shoes.jpg" alt="Shoes" />
+          <h4>NorthF Shoes</h4>
+          <p>
+            High-grip soles, waterproof materials, and ankle support ensure
+            stability and protection for both hiking trails and climbing
+            paths.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-column">
+        <h4>About WH</h4>
+        <ul>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Price matching and protection</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">My Rewards</a></li>
+          <li><a href="#">Change address</a></li>
+          <li><a href="#">Order history</a></li>
+          <li><a href="#">Gift cards</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Member Rewards</h4>
+        <ul>
+          <li><a href="#">Outdoor impact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#"><img src="Images/facebook.png" alt="" /></a>
+          <a href="#"><img src="Images/twitter.png" alt="" /></a>
+          <a href="#"><img src="Images/instagram.png" alt="" /></a>
+          <a href="#"><img src="Images/youtube.png" alt="" /></a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; 2024. All rights reserved. Wild Horizon Limited.
+      </p>
+    </div>
+  </footer>
+  <!-- linking to external js -->
+  <script src="js/login.js"></script>
+  <script src="js/details.js"></script>
+  <script src="js/about.js"></script>
+
+</body>
+
+</html>
